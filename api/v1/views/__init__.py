@@ -24,3 +24,9 @@ task 8
 """
 
 from api.v1.views.amenities import *
+
+"""
+task 9
+"""
+
+from api.v1.views.users import *
