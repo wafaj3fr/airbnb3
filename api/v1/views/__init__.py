@@ -12,3 +12,9 @@ task 6
 """
 
 from api.v1.views.states import *
+
+"""
+task 7
+"""
+
+from api.v1.views.cities import *
