@@ -36,3 +36,9 @@ task 10
 """
 
 from api.v1.views.places import *
+
+"""
+task 11
+"""
+
+from api.v1.views.places_reviews import *
