@@ -18,3 +18,9 @@ task 7
 """
 
 from api.v1.views.cities import *
+
+"""
+task 8
+"""
+
+from api.v1.views.amenities import *
