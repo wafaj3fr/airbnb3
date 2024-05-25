@@ -9,6 +9,7 @@ from api.v1.views import app_views
 @app_views.route('/states', strict_slashes=False)
 def get_states():
     """get all states"""
+    print(request.user_agent, 'origin end') #12
     states = storage.all("State") # in vid: states = storage.all(State).values()
     states = [state.to_dict() for state in states.values()] # in vid: state_list = [state.to_dict() for state in states]
     return jsonify(states) # in vid: return jsonify(state_list)

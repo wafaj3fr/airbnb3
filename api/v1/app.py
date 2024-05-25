@@ -2,13 +2,17 @@
 """Flask blueprint"""
 
 from flask import Flask, jsonify
+from flask_cors import CORS #12
 from models import storage
 from api.v1.views import app_views
 from os import getenv
 
 app = Flask(__name__)
 
+CORS(app, resources={r'/api/v1/*': {'origins': '0.0.0.0'}}) #12
+
 app.register_blueprint(app_views)
+app.url_map.strict_slashes = False #12
 
 """task 5 """ 
 @app.teardown_appcontext
